@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Faster+One&family=Rye&display=swap');
+/*
+********************* ESTILS GENERALS *************
+*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: Arial;
+  }
+h1{
+    font-size:30px;
+    font-family: 'Rye', cursive;
+    animation: heartBeat; 
+    animation-duration: 2s;
+    color: black;
+    text-shadow: 4px 4px 10px #ab0a0a;
+}
+main{
+    width: 100%;
+    align-items: center;
+    background-color: gray;
+}
+h2 {
+    color:white;
+    text-shadow: 4px 4px 10px #ab0a0a;
+    margin: 20px 0px 30px 100px;
+}
+h3 {
+    color: aliceblue;
+    text-shadow: 0px 4px 10px red;
+}
+.tabla h3{
+    text-shadow: 0 0 4px #FF0000;
+}
+
+/*
+************************* LOGO *********************
+*/
+
+.logo {
+    background-image: linear-gradient(rgba(97, 11, 11, 0.637), black);
+    width: 100%;
+    text-align: center;
+}
+.logo img {
+    width: 150px;
+    height: 150px;
+}
+
+/*
+********************* MENÚ NAVEGACIÓN *************
+*/
+
+nav {
+    display: inline-block;
+	width: 100%;
+	text-align: center;
+	position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: rgb(0, 0, 0);
+    border-bottom-style: outset;
+    border-color: red;
+}
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+nav li {
+    display: inline-block;
+    margin-right: 15px;
+}
+nav a {
+    font-size: small;
+    display: block;
+    font-family: 'Bungee Spice', cursive;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+} 
+nav a:hover {
+    background-color: wheat;
+}
+nav li.desplegable {
+    display: inline-block;
+}
+nav .desplegable-contenido {
+    display: none;
+    position: absolute;
+    background-color: rgba(17, 17, 17, 0.959);
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+nav .desplegable-contenido a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+nav .desplegable:hover .desplegable-contenido {
+    display: block;
+}
+
+/*
+********************** INFO VIDEOJUEGO *********************
+*/
+
+.sect {
+    width: 100%;
+    min-height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+video {
+    position: cover;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0.8;
+}
+span{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size:150%;
+}
+span a {
+    text-decoration: none;
+    background-image: -webkit-linear-gradient(top, #ff4545, #be9032);
+    text-transform: uppercase;
+    padding: 1em;
+    cursor: pointer;
+    outline: none;
+    border-radius: 15px;
+    box-shadow: 0 5px #999;
+}
+span a:hover,span a:focus {
+    background-image: -webkit-linear-gradient(top, #be9032, #ff4545);
+    color: red;
+}
+span a:active{
+    background-image: -webkit-linear-gradient(top, #be9032, #ff4545);
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
+}
+.cajon{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+    color: white;
+    background-image: url(SRC/backterror.jpg);
+    background-repeat: no-repeat;
+}
+.info{
+    float: left;
+    width: clamp(300px,65%,1100px);
+    height: 85vh;
+    margin-top: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    background-color: rgba(0, 0, 0, 0.603);
+    box-shadow: 10px 10px rgb(61, 74, 79);
+}
+.columnes, .columnes2{
+    float: left;
+    width: 45%;
+    padding: 15px;
+}
+.columnes2{
+    border-left: 30px;
+}
+.intro{
+    padding: 15px;
+}
+.tabla{
+    float: right;
+    width: clamp(300px,25%,400px);
+    position: relative;
+    box-shadow: 10px 10px rgb(61, 74, 79);
+    border-color: rgba(137, 16, 16, 0.805);
+    border-style: solid;
+    background-color: black;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.tabla img{
+    width: 100%;
+    height: 40%;
+}
+
+th, td{ 
+    border-bottom: solid rgba(153, 22, 22, 0.907);
+}
+td {
+    border-left: solid rgba(153, 22, 22, 0.907);
+}
+.info li{
+    margin-left: 1rem;
+}
+.tabla h3{
+    margin: 10px 0px 10px 10px;
+}
+.titulo_tabla{
+    margin: 10px 0px 10px 0px;
+}
+
+/*
+********************** INFO VIDEOJUEGO PARTE-2 *********************
+*/
+
+.columizquierda {   
+    float: left;
+    width: clamp(300px,65%,1200px);
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+.columderecha {
+    float: left;
+    width: clamp(300px,25%,900px);
+    padding-left: 20px;
+}
+.cajon2{
+    margin-top: 50px;
+}
+.imgnoticia, .imgnoticia2{
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+}
+.imgnoticia2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+h6{
+    font-size: 15px;
+}
+h4{
+    font-size: 22px;
+}
+.columizquierda img{
+    height: 290px;
+    width: clamp(200px,90%,900px);
+}
+.columderecha img{
+    height:290px;
+    width: clamp(200px,95%,1000px);
+    border-radius: 20px;
+}
+.imgnoticia2 img{
+    height:100px;
+    width: 100%;
+    border-radius: 10px;
+}
+.cont1{
+    float: left;
+    width: 30%;
+}
+.cont2{
+    float: right;
+    width: 60%;
+}
+.contenido {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+.cajon2:after, .info {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+/* Cuando la pantalla tiene menos de 800 px de ancho, las dos columnas se apilan una encima de la otra en lugar de una al lado de la otra */
+@media screen and (max-width: 800px) {
+    .columizquierda, .columderecha {   
+      width: 100%;
+      padding: 0;
+    }
+}
+/* Hace que las dos columnas se apilen una encima de la otra en lugar de una al lado de la otra */
+@media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
+}
+
+/*
+********************** IMAGENES *********************
+*/
+
+.imagen {
+    display: flex;
+    width: 100%;
+    height: 600px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+.imagen img {
+    flex: 0 0 100%;
+    width: 100%;
+    object-fit: cover;
+    scroll-snap-align: center;
+}
+
+/*
+********************** FOOTER ************************
+*/
+
+footer {
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    border-top: solid #665f53;
+}
+footer .footer-logos-rs{
+    float: left;
+	width: 25px;
+	height: 25px;
+	margin:4px;
+	vertical-align: top;
+    margin-top: 8px;
+}
+footer .copy{
+    float: right;
+    margin-top: 10px;
+}
+footer address{
+    margin-top: 5px;
+}
+
+
+
+
+  
+
+
+

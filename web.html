@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONTS "librería de las fuentes utilizadas"-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rye&display=swap">
+    <!-- ANIMATE CSS "link de la pagina para hacer animaciones en css"-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <!-- ICONO PESTAÑA -->
+    <link rel="icon" type="image/png" href="SRC/logo_def.png">
+    <!-- REFERENCIA FICHERO CSS -->
+    <link rel="stylesheet" href="web.css">
+    <title>Web Videojuegos</title>
+</head>
+<body>
+    <!-- HEADER: Cabecera principal de nuestra página web -->
+    <header>
+        <div class="logo">
+            <img src="SRC/juego.png" alt="logo">
+            <h1 class="font-effect-fire">LEARNING THROUCH PLAY</h1> <!--Esta clase es de la primera librería de GOOGLE FONTS y, por tanto, ya está creada, simplemente he puesto el nombre de la clase con el fin de aplicar el efecto deseado.-->
+        </div>
+    </header>
+    <!-- NAV: Lista de la barra de navegación, donde está definido un efecto de fuente para el nombre de la página en la que nos encontramos, y un menú desplegable en el apartado de la info del juego. -->
+    <nav>
+        <ul>
+            <li class="font-effect-fire"><a href="web.html">VIDEOJUEGOS</a></li>
+            <li><a href="listavideojuegos.html">LISTA</a></li>
+            <li><a href="#noticias">NOTICIAS</a></li>
+            <li><a href="#Ranking">RANKING</a></li>
+            <li class="desplegable">
+                <a href="#" class="boto-desp">INFO JUEGO</a>
+                <div class="desplegable-contenido">
+                <a href="#">God of War</a>
+                <a href="info.html">Resident Evil</a>
+                <a href="#">Sons of The Forest</a>
+                <a href="#">Saints Row</a>
+                <a href="#">The Evil Withing</a>
+                <a href="#">Assassin's Creed</a>
+              </div>
+            </li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+        </ul>
+    </nav>
+    <!-- MAIN: Contenido de los distintos apartados que tendrá la página. -->
+    <main>
+        <!-- SECTION: Sección de 6 artículos + título de la sección. Contiene: los distintos artículos, y dentro de cada uno, una imagen, un título, un texto y un botón. -->
+        <section id="videojuegos">
+            <h2>VIDEOJUEGOS</h2>
+            <div class="primeraclas">
+            <article>
+                <div class="info_videojuego">
+                <img src="SRC/good.jpeg" alt="God of War: Ragnarok">
+                </div>
+                <h4>God of War: Ragnarok</h4>
+                <p>Una secuela de God of War de 2018 fue sugerida durante el final del juego con una escena que mostraba al dios nórdico Thor enfrentándose a Kratos y Atreus.</p>
+                <div class="boton">
+                    <!-- En estos botones, le he dado un toque "javaScript", para que aparezca una alerta en la parte superior de la página con el texto correspondiente. -->
+                    <button type="button" onclick="alert('Si quieres ver más información, solo la encontrarás en el juego Resident Evil 7.')">más info</button>
+                </div>
+            </article>
+            <article>
+                <div class="info_videojuego">
+                <img src="SRC/residen.jpg" alt="Resident Evil 7: Biohazard">
+                </div>
+                <h4>Resident Evil 7: Biohazard</h4>
+                <p>El peligro y la soledad emanan de las decrépitas paredes de una granja abandonada en el sur de los EE. UU. «7» marca un nuevo inicio para el género del survival horror, con un cambio total de modelo con la aterradora e inmersiva perspectiva de jugador «vista aislada». Con el revolucionario RE Engine, el terror llega a nuevas cotas, con un fotorrealismo tan impactante que no podrás apartar los ojos. Entra en un espeluznante nuevo mundo de terror y sobrevive.</p>
+                <div class="boton">
+                    <span><a href="info.html" type="button" alt="boton">más info</a></span>
+                </div>
+            </article>
+            <article>
+                <div class="info_videojuego">
+                <img src="SRC/sons.jpg" alt="Sons of the Forest">
+                </div>
+                <h4>Sons of the Forest</h4>
+                <p>Sons of the Forest continuará la historia del primer juego, con el protagonista volviendo a la isla en la que los personajes vivieron innumerables horrores para conseguir sobrevivir.</p>
+                <div class="boton">
+                    <button type="button" onclick="alert('Si quieres ver más información, solo la encontrarás en el juego Resident Evil 7.')">más info</button>
+                </div>
+            </article>
+            <article>
+                <div class="info_videojuego">
+                <img src="SRC/saintss.jpg" alt="Saints Row: Gat out of Hell">
+                </div>
+                <h4>Saints Row: Gat out of Hell</h4>
+                <p>Saints Row es la historia de una empresa emergente, solo que el negocio al que se dedican los Saints resulta ser el crimen organizado.</p>
+                <div class="boton">
+                    <button type="button" onclick="alert('Si quieres ver más información, solo la encontrarás en el juego Resident Evil 7.')">más info</button>
+                </div>
+            </article>
+            <article>
+                <div class="info_videojuego">
+                <img src="SRC/evill.jpg" alt="The Evil Withing">
+                </div>
+                <h4>The Evil Withing</h4>
+                <p>The Evil Within encarna el significado del horror puro de supervivencia. Entornos altamente elaborados, ansiedad espeluznante y una intrincada historia se combinan para crear un mundo inmersivo que te llevará a las alturas de la tensión. Con limitados recursos a tu disposición, lucha por la supervivencia y experimenta un miedo profundo en esta perfecta mezcla de horror y acción. </p>
+                    <div class="boton">
+                        <button type="button" onclick="alert('Si quieres ver más información, solo la encontrarás en el juego Resident Evil 7.')">más info</button>
+                    </div>
+            </article>
+            <article>
+                <div class="info_videojuego">
+                <img src="https://cdn2.unrealengine.com/Diesel%2Fproductv2%2Fassassins-creed-origins%2Fdeluxe-edition%2FACH_UCS12002_EGST_BannerBundle_DLX_US_Store_Landscape_2560x1440-1920x1080-1cc5d95370b97e58bb64384448c5db24025701b3.jpg" alt="Assassin's Creed: Origins Portada">
+                </div>
+                <h4>Assassin's Creed: Origins</h4>
+                <p>Assassin's Creed: Origins es un videojuego de acción-aventura y RPG de la saga Assassin's Creed cuya fecha de lanzamiento fue el 27 de octubre de 2017.</p>
+                <div class="boton">
+                    <button type="button" onclick="alert('Si quieres ver más información, solo la encontrarás en el juego Resident Evil 7.')">más info</button>
+                </div>
+            </article>
+            </div>
+        </section>
+        <!-- DIV: (o "caja"), donde he definido dos partes. Una es el aside (sera el apartado informativo) donde contendrá un título principal y uno por cada apartado que queramos definir con el texto correspondiente. -->
+        <div class="cajon">
+            <aside>
+                <h2>Trucos</h2><br>
+                <div class="contenido">
+                <h5>Grand Theft Auto</h5>
+                <p><span>Para aparecer barcos:</span> 362-555-050<br>
+                    <span>Para aparecer salud:</span> 482-555-050</p>
+                <br>
+                <h5>League of Legends</h5>
+                <p><span>Hechizos de invocador:</span> te explicamos qué son y cómo funciona cada uno.<br>
+                    <span>Subir de nivel rápido:</span> descubre todas las formas de ganar puntos de experiencia (EXP).<br>
+                    <span>Recompensas de cuenta:</span> aquí mostramos todos los premios que ganarás por subir tu nivel en LoL.</p>
+                </div>
+            </aside>
+            <!-- La otra parte será una sección de 4 artículos, en la que contendrá un título, un texto, una imagen y un botón integrado dentro de la imagen. -->
+            <section class="noticias" id="noticias">
+                <h2>Noticias</h2>
+                <div class="segundaclas">
+                    <article>
+                        <h5>Los videojuegos como herramientas para el conocimiento</h5>
+                        <p>
+                            Desde que comenzamos nuestra andadura con GammeraNest y como equipo creativo, hace ya diez años, asesorando a museos y otras compañías sobre cómo usar la narrativa de los videojuegos a su
+                            favor, siempre hemos pensado que el conocimiento debe ser compartido con todos si queremos que este mundo sea mejor y que la única forma de adquirirlo es trabajando duro y aprendiendo para posteriormente poder transmitirlo.
+                        </p>
+                        <img src="SRC/noticia1.jpg" alt="Noticia 1">
+                        <div>
+                            <button type="button">Seguir la noticia</button>
+                        </div>
+                    </article>
+                    <article>
+                        <h5>EA actualiza los juegos que perderán servicios online en los próximos meses</h5>
+                        <p>
+                            El videojuego de Electronic Arts (EA) Los Sims 4 ha pasado a ser de descarga gratuita desde este martes, un cambio que la compañía ha acompañado de modificaciones en sus servicios en
+                            línea, que afectan también a otros títulos como Command i Conquer, Mirror's Edge y Army of Two.
+                        </p>
+                        <img src="SRC/noticia2.jpg" alt="Noticia 2">
+                        <div>
+                            <button type="button">Seguir la noticia</button>
+                        </div>
+                    </article>
+                    <article>
+                        <h5>Nuevas pistas sugieren que el nuevo juego de Hideo Kojima es Death Stranding 2</h5>
+                        <p>
+                            A pesar de que sus títulos suelen generar opiniones divididas, Kojima Productions es una de las desarrolladoras que más dan de qué hablar. Aunque la compañía aún no ha revelado oficialmente su
+                            próximo proyecto, con crípticos mensajes su jefe, Hideo Kojima, ha estado emocionando a los fans sobre una pronta revelación y las sospechas sobre Death Stranding se hacen más grandes.
+                        </p>
+                        <img src="SRC/noticia3.jpeg" alt="Noticia 3">
+                        <div>
+                            <button type="button">Seguir la noticia</button>
+                        </div>
+                    </article>
+                    <article>
+                        <h5>4.000 dólares por doblar un juego millonario: 'Bayonetta 3' es el último escándalo</h5>
+                        <p>
+                            El próximo 28 de octubre PlatinumGames lanza 'Bayonetta 3', uno de los juegos más esperados para la Nintendo Switch. El título es prometedor, pero su lanzamiento se ha convertido en un verdadero
+                            escándalo. Una actriz de doblaje ha puesto el grito en el cielo por un tema siempre sensible: según ella ofrecen sueldos miserables incluso en producciones que acaban generando millones y millones de dólares.
+                        </p>
+                        <img src="SRC/noticia4.jpeg" alt="Noticia 4">
+                        <div>
+                            <button type="button">Seguir la noticia</button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+        <!-- Div o "caja", donde contiene un apartado final, con un título y una lista de div's. Dentro de cada una contiene una imagen, un título y un texto. -->
+        <div class="Rank" id="Ranking">
+            <h4 class="font-effect-neon">Ranking</h4>
+            <div class="jugador">
+                <img src="SRC/cara1.jpg" alt="Jugador">
+                <h6>Nombre</h6>
+                <p>Puntuación: x</p>
+            </div>
+            <div class="jugador">
+                <img src="SRC/cara2.jpg" alt="Jugador">
+                <h6>Nombre</h6>
+                <p>Puntuación: x</p>
+            </div>
+            <div class="jugador">
+                <img src="SRC/cara3.jpg" alt="Jugador">
+                <h6>Nombre</h6>
+                <p>Puntuación: x</p>
+            </div>
+            <div class="jugador">
+                <img src="SRC/cara4.jpg" alt="Jugador">
+                <h6>Nombre</h6>
+                <p>Puntuación: x</p>
+            </div>
+            <div class="jugador">
+                <img src="SRC/cara1.jpg" alt="Jugador">
+                <h6>Nombre</h6>
+                <p>Puntuación: x</p>
+            </div>
+            <div class="jugador">
+                <img src="SRC/cara2.jpg" alt="Jugador">
+                <h6>Nombre</h6>
+                <p>Puntuación: x</p>
+            </div>
+        </div>
+    </main>
+    <!-- FOOTER: Pie de la página, donde aparece una div con una lista de links, una div para especificar una dirección y una div con un texto para citar la propiedad de la página. -->
+    <footer>
+        <div>
+            <a href=""><img class="footer-logos-rs" src="SRC/instagram.png" alt="Instagram"></a>
+            <a href=""><img class="footer-logos-rs" src="SRC/facebook.png" alt="Facebook"></a>
+            <a href=""><img class="footer-logos-rs" src="SRC/twitter.png" alt="Twitter"></a>
+            <a href=""><img class="footer-logos-rs" src="SRC/youtube.png" alt="Youtube"></a>
+        </div>
+        <div>
+            <address>Carrer d'Aiguablava 121 <br> 08033 Barcelona</address>
+        </div>
+        <div class="copy">
+            <p>Copyright 2022 - 2022</p>
+        </div>
+    </footer>
+</body>
+</html>

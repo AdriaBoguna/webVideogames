@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONTS --> <!--pagina d'on he tret totes les fonts de les diferentes pagines-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <!-- FONT AWESOME --> <!--pagina d'on agafarem les iconas-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- ANIMATE CSS --> <!--pagina per animar el text o contingut de la pagina en general-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="icon" type="image/png" href="SRC/logoform.png">
+    <link rel="stylesheet" href="contacto.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="SRC/juego.png" alt="logo">
+            <h1 class="font-effect-fire">CONTACTO</h1>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="web.html">VIDEOJUEGOS</a></li>
+            <li><a href="listavideojuegos.html">LISTA</a></li>
+            <li class="desplegable">
+                <a href="#" class="boto-desp">INFO JUEGO</a>
+                <div class="desplegable-contenido">
+                <a href="#">God of War</a>
+                <a href="info.html">Resident Evil</a>
+                <a href="#">Sons of The Forest</a>
+                <a href="#">Saints Row</a>
+                <a href="#">The Evil Withing</a>
+                <a href="#">Assassin's Creed</a>
+              </div>
+            </li>
+            <li class="font-effect-fire"><a href="contacto.html">CONTACTO</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2 class="logoo">Contact <span class="font-effect-neon">Us</span></h2>
+            <div class="contenedor">
+                <div class="contacto">
+                    <h3>Contacta con nosotros</h3>
+                    <form action="action">
+                        <p>
+                            <label>Nombre completo</label>
+                            <input type="text" name="Nombre_completo">
+                        </p>
+                        <p>
+                            <label>Correo electrónico</label>
+                            <input type="email" name="email">
+                        </p>
+                        <p>
+                            <label>Teléfono</label>
+                            <input type="tel" name="Teléfono">
+                        </p>
+                        <p>
+                            <label>Asunto</label>
+                            <input type="text" name="Asunto">
+                        </p>
+                        <p class="block">
+                            <label>Mensaje</label>
+                            <textarea name="Mensaje" rows="3"></textarea>
+                        </p>
+                        <p class="block">
+                            <button type="button">
+                                <b>Enviar</b>
+                            </button>
+                        </p>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h4>Más información</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Carrer d'Aiguablava, 121, 08033 Barcelona</li>
+                        <li><i class="fas fa-phone"></i> (+34) 937 070 020</li>
+                        <li><i class="fas fa-envelope-open-text"></i> info@itb.cat</li>
+                    </ul>
+                    <p>Escríbenos y pronto nos pondremos en contacto contigo.</p>
+                    <p>BoguGames.com</p>
+                    <div id="mapa">
+                        <iframe title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5029.005402951449!2d2.1860130870845325!3d41.455178180943214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4bcfdad2100a9%3A0x3c4e7db0a61a83e0!2sInstitut%20Tecnol%C3%B2gic%20de%20Barcelona!5e0!3m2!1ses!2ses!4v1668620887875!5m2!1ses!2ses"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- FOOTER: Pie de la página, donde aparece una div con una lista de links, una div para especificar una dirección y una div con un texto para citar la propiedad de la página. -->
+    <footer>
+        <div>
+            <a href=""><img class="footer-logos-rs" src="SRC/instagram.png" alt="Instagram"></a>
+            <a href=""><img class="footer-logos-rs" src="SRC/facebook.png" alt="Facebook"></a>
+            <a href=""><img class="footer-logos-rs" src="SRC/twitter.png" alt="Twitter"></a>
+            <a href=""><img class="footer-logos-rs" src="SRC/youtube.png" alt="Youtube"></a>
+        </div>
+        <div>
+            <address>Carrer d'Aiguablava 121 <br> 08033 Barcelona</address>
+        </div>
+        <div class="copy">
+            <p>Copyright 2022 - 2022</p>
+        </div>
+    </footer>
+</body>
+</html>
