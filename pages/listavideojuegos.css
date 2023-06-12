@@ -25,7 +25,7 @@ h1{
 */
 
 .logo {
-    background-image: url(SRC/paredd.PNG);
+    background-image: url(../SRC/paredd.PNG);
     background-size: contain;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -102,7 +102,7 @@ nav .desplegable:hover .desplegable-contenido {
 main{
     width: 100%;
     align-items: center;
-    background-image: url(SRC/backlog.jpg);
+    background-image: url(../SRC/backlog.jpg);
     background-size: 100vw 100vh;
 }
 h2 {

@@ -155,7 +155,7 @@ span a:active{
     width: 100%;
     justify-content: space-evenly;
     color: white;
-    background-image: url(SRC/backterror.jpg);
+    background-image: url(../SRC/backterror.jpg);
     background-repeat: no-repeat;
 }
 .info{

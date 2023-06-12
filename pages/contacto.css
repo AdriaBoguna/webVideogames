@@ -44,7 +44,7 @@ h2 {
 */
 
 .logo {
-    background-image: url(SRC/log1.jpg);
+    background-image: url(../SRC/log1.jpg);
     background-size: contain;
     
     width: 100%;
